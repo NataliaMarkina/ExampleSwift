@@ -26,7 +26,3 @@ class Solution {
         return res
     }
 }
-
-var ob = Solution()
-
-print(ob.sortArrayByParity([3,1,2,4]))
