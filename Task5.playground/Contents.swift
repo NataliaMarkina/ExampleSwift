@@ -3,7 +3,7 @@
 import UIKit
 
 class Solution {
-    func numUniqueEmails(_ emails: [String]) -> Int {
+    func numUniqueEmails(_ emails: [String]) -> Int { // Хорошее решение, возможно можно подумать об упрощении циклов
         var res : Set<String> = []
         
         for email in emails {

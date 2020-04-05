@@ -14,6 +14,9 @@ class Solution {
         }
         
         return res
+
+        //В Swift уже есть готовая функция понижающая регистр, можно было избежать этого большого словаря
+        //return str.lowercased()
     }
 }
 

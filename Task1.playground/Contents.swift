@@ -15,5 +15,8 @@ class Solution {
         }
         
         return res
+
+        //В Swift есть уже готовая функция по замене переменных в строке
+        // return address.replacingOccurrences(of: ".", with: "[.]")
     }
 }

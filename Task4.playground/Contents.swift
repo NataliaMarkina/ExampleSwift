@@ -4,25 +4,9 @@ import UIKit
 
 class Solution {
     func sortArrayByParity(_ A: [Int]) -> [Int] {
-        var res = A
-        
-        var start = 0
-        var end = res.count - 1
-        
-        while start < end {
-            if res[start] % 2 == 0 {
-                start += 1
-            } else if res[end] % 2 == 1 {
-                end -= 1
-            } else {
-                var tmp = res[start]
-                res[start] = res[end]
-                res[end] = tmp
-                start += 1
-                end -= 1
-            }
-        }
-        
-        return res
+        var tmp = [Int]()
+        A.forEach { $0 % 2 == 0 ? tmp.insert($0, at: 0) : tmp.append($0) } //Можно используя тернарный оператор и другие функции успростить решение до такого
+        return tmp
     }
 }
+
